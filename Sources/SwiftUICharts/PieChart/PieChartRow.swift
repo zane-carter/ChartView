@@ -48,7 +48,7 @@ public struct PieChartRow : View {
         self.backgroundColor = backgroundColor
         self.accentColor = accentColor
         self._showValue = showValue
-        self._currentvalue = currentValue
+        self._currentValue = currentValue
     }
     
     public var body: some View {
