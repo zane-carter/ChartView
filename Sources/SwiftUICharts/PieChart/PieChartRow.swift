@@ -38,6 +38,12 @@ public struct PieChartRow : View {
         }
     }
     
+    public init(data: [Double], backgroundColor: Color, accentColor: Color) {
+        self.data = data
+        self.backgroundColor = backgroundColor
+        self.accentColor = accentColor
+    }
+    
     public var body: some View {
         GeometryReader { geometry in
             ZStack{
