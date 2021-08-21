@@ -43,6 +43,13 @@ public struct PieChartRow : View {
         self.backgroundColor = backgroundColor
         self.accentColor = accentColor
     }
+    public init(data: Data, backgroundColor: Color, accentColor: Color, showValue: Binding<Bool>, currentValue: Binding<Double>) {
+        self.data = data
+        self.backgroundColor = backgroundColor
+        self.accentColor = accentColor
+        self._showValue = showValue
+        self._currentvalue = currentValue
+    }
     
     public var body: some View {
         GeometryReader { geometry in
