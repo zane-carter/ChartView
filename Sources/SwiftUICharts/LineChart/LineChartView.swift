@@ -81,7 +81,6 @@ public struct LineChartView: View {
                                 }else{
                                     Image(systemName: "arrow.down")
                                 }
-                                Text("\(rateValue!)%")
                             }
                         }
                     }
