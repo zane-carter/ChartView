@@ -45,7 +45,7 @@ public struct PieChartRow: View {
                         backgroundColor: self.style.backgroundColor.startColor,
                         accentColor: self.style.foregroundColor.rotate(for: index)
                     )
-                    .scaleEffect(currentTouchedIndex == index ? 1.1 : 1)
+                    .scaleEffect(currentTouchedIndex == index ? 1.1 : 0.95)
                     .animation(Animation.spring())
                 }
             }
