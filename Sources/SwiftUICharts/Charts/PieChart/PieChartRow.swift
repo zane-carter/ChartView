@@ -32,6 +32,12 @@ public struct PieChartRow: View {
             }
         }
     }
+    
+    public init(data: [Double], backgroundColor: Color, accentColor: Color) {
+        self.data = data
+        self.backgroundColor = backgroundColor
+        self.accentColor = accentColor
+    }
 
     public var body: some View {
         GeometryReader { geometry in
@@ -45,7 +51,7 @@ public struct PieChartRow: View {
                         backgroundColor: self.style.backgroundColor.startColor,
                         accentColor: self.style.foregroundColor.rotate(for: index)
                     )
-                    .scaleEffect(currentTouchedIndex == index ? 1.1 : 0.5)
+                    .scaleEffect(currentTouchedIndex == index ? 1.1 : 1)
                     .animation(Animation.spring())
                 }
             }
