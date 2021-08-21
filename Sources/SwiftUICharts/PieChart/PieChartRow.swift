@@ -42,6 +42,8 @@ public struct PieChartRow : View {
         self.data = data
         self.backgroundColor = backgroundColor
         self.accentColor = accentColor
+        self._showValue = .constant(false)
+        self._currentValue = .constant(0)
     }
     public init(data: [Double], backgroundColor: Color, accentColor: Color, showValue: Binding<Bool>, currentValue: Binding<Double>) {
         self.data = data
